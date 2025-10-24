@@ -1,18 +1,17 @@
 # 📦  Porque o Java Exige - Pull Request: Onboarding
 
-Bem-vindo(a) à sua primeira Pull Request! 🎉  
-Este é um passo importante na sua jornada como desenvolvedor(a). Parabéns por chegar até aqui! 🚀
+Bem-vindo(a) a Pull Request deste repositório! Preencha os campos abaixo antes de iniciar sua PR 
 
 ---
 
 ## 👤 Usuário
-<!-- Ex: @lucascorreaa -->
-**GitHub Username:** 
+<!-- Ex: @GoBrazill(melhor programador) -->
+**Nome de usuário do Github:** 
 
 ---
 
 ## ✍️ Descrição
-<!-- Descreva sucintamente o que este PR adiciona ou corrige -->
+<!-- Descreva de forma breve as alterações feitas -->
 **Resumo das alterações:**
 
 - 
@@ -37,6 +36,7 @@ Este é um passo importante na sua jornada como desenvolvedor(a). Parabéns por 
 - [ ] Adicionei todos os campos solicitados
 - [ ] Testei localmente e está funcionando como esperado
 - [ ] Adicionei prints ou evidências (se necessário)
+- [ ] Verifiquei se a nomeação de arquivos segue kebab case
 
 ---
 
