@@ -1,0 +1,89 @@
+@import url("./style.css");
+
+/* ====== Container principal ====== */
+.integrantes {
+  text-align: center;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 25px;
+}
+
+/* ====== Card dos integrantes ====== */
+.card-integrante {
+  background-color: #ede9f9;
+  border-radius: 20px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
+  width: 220px;
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-integrante:hover {
+  transform: translateY(-6px);
+  box-shadow: 10px 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card-integrante img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid #d8d2e8;
+}
+
+.card-integrante h3 {
+  font-size: 1.1rem;
+  color: #3f3c62;
+  margin: 10px 0;
+  margin-bottom: 30px;
+}
+
+.content-box {
+  margin-bottom: 40px;
+}
+/* ====== Links ====== */
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.links img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.2s ease;
+  padding: 4px;
+}
+
+.links img:hover {
+  transform: scale(1.15);
+}
+
+/* ====== Responsividade ====== */
+@media (max-width: 480px) {
+  .cards-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-integrante {
+    width: 85%;
+  }
+
+  .card-integrante img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .links img {
+    width: 50px;
+    height: 50px;
+  }
+}
