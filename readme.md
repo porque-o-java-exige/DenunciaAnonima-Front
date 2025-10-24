@@ -16,7 +16,9 @@ Safe Speak tem a proposta de trazer um lugar de conforto para vítimas de violê
 │   │   └── images/
 │   │   
 │   ├── js/  
-│   │   └── script.js
+│   │   ├── denuncia.js
+│   │   │
+│   │   └── mulher.js
 │   │
 │   └── style/     
 │       ├── forms.css
