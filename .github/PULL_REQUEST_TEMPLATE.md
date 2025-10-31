@@ -6,7 +6,7 @@ Bem-vindo(a) a Pull Request deste repositório! Preencha os campos abaixo antes 
 
 ## 👤 Usuário
 <!-- Ex: @GoBrazill(melhor programador) -->
-**Nome de usuário do Github:** 
+**>Nome de usuário do Github<** 
 
 ---
 
@@ -19,11 +19,15 @@ Bem-vindo(a) a Pull Request deste repositório! Preencha os campos abaixo antes 
 ---
 
 ## 🧪 Como testar
-<!-- Passos para testar essa PR localmente -->
-1. Clone o repositório e acesse a branch:
+<!-- Passos para fazer alterções nesse projeto -->
+
+1. Clone o repositório e acesse a sua branch:
    ```bash
-   git checkout nome-da-branch
+   <!-- prefixo -b troca para esta branch assim que for criada, 
+   se sua branch já está criada tire o -b -->
+   Ex: git checkout -b nome-da-minha-branch
    ```
+
 2. Execute os seguintes passos:
    - [ ] Passo 1: Abra o live server
    - [ ] Passo 2: alterar os arquivos
@@ -37,6 +41,7 @@ Bem-vindo(a) a Pull Request deste repositório! Preencha os campos abaixo antes 
 - [ ] Testei localmente e está funcionando como esperado
 - [ ] Adicionei prints ou evidências (se necessário)
 - [ ] Verifiquei se a nomeação de arquivos segue kebab case
+- [ ] Adicionei uma imagem a pull request
 
 ---
 
@@ -50,3 +55,8 @@ Bem-vindo(a) a Pull Request deste repositório! Preencha os campos abaixo antes 
 ## 💬 Observações
 <!-- Algum ponto de atenção, dúvida ou sugestão? -->
 - 
+
+---
+
+## 📸 Imagens e prints
+<!-- Obrigatório adicionar uma imagem -->
