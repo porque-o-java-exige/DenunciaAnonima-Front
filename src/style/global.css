@@ -203,7 +203,7 @@ footer p {
   }
 
   .content-box {
-    width: 100%;
+    width: 92%;
     margin: 0;
     padding: 30px;
     border-radius: 15px;
@@ -220,12 +220,13 @@ footer p {
   }
 
   .content-box h2 {
-    font-size: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
   }
 
   .content-box p,
   .content-box li {
-    font-size: 0.8rem;
+    font-size: 1rem;
     line-height: 1.2rem;
   }
 
@@ -243,7 +244,8 @@ footer p {
   footer {
     font-size: 0.8rem;
     padding: 8px 0;
-    border-radius: 30px;
+    border-radius: 15px 15px 0 0;
+    width: 92%;
   }
 
   footer a {
