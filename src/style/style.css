@@ -12,13 +12,13 @@
     height: auto;
   }
   .content-box{
-    width: 370px;
+    /* width: 370px; */
     margin-top: 20px;
   }
 
   .content-box h1,
   .content-box h2 {
-    font-size: 40px;
+    font-size: 36px;
     font-weight: bold;
     text-align: center;
     line-height: normal;
