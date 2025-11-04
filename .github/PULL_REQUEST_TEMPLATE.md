@@ -1,16 +1,16 @@
-# 📦  Porque o Java Exige - Pull Request: Onboarding
+# Porque o Java Exige - Pull Request: Onboarding
 
 Bem-vindo(a) a Pull Request deste repositório! Preencha os campos abaixo antes de iniciar sua PR 
 
 ---
 
-## 👤 Usuário
+## Usuário
 <!-- Ex: @GoBrazill(melhor programador) -->
 **>Nome de usuário do Github<** 
 
 ---
 
-## ✍️ Descrição
+## Descrição
 <!-- Descreva de forma breve as alterações feitas -->
 **Resumo das alterações:**
 
@@ -18,7 +18,7 @@ Bem-vindo(a) a Pull Request deste repositório! Preencha os campos abaixo antes 
 
 ---
 
-## 🧪 Como testar
+## Como testar
 <!-- Passos para fazer alterções nesse projeto -->
 
 1. Clone o repositório e acesse a sua branch:
@@ -35,17 +35,17 @@ Bem-vindo(a) a Pull Request deste repositório! Preencha os campos abaixo antes 
 
 ---
 
-## ✅ Checklist
+## Checklist
 - [ ] Verifiquei se este PR segue o padrão descrito
 - [ ] Adicionei todos os campos solicitados
 - [ ] Testei localmente e está funcionando como esperado
 - [ ] Adicionei prints ou evidências (se necessário)
 - [ ] Verifiquei se a nomeação de arquivos segue kebab case
-- [ ] Adicionei uma imagem a pull request
+- [ ] Adicionei pelo menos uma imagem a pull request
 
 ---
 
-## 🔗 Issues Relacionadas
+## Issues Relacionadas
 <!-- Essa PR resolve alguma issue? -->
 <!-- Ex: Closes #01 -->
 - Closes #
@@ -58,5 +58,5 @@ Bem-vindo(a) a Pull Request deste repositório! Preencha os campos abaixo antes 
 
 ---
 
-## 📸 Imagens e prints
-<!-- Obrigatório adicionar uma imagem -->
+## Imagens e prints
+<!-- Obrigatório adicionar pelo menos uma imagem -->
