@@ -1,6 +1,38 @@
 /* Importando uma fonte do Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap");
 
+/* --- cores --- */
+
+:root {
+  --color-gradient: linear-gradient(135deg, #d8d2e8, #a799c7);
+  --color-primary-lavanda-50: #ede9f9;
+  --color-primary-lavanda-100: #c9c0e0;
+  --color-primary-lavanda-150: #3f3c62;
+  
+  --color-neutral-black: #121212;
+  --color-neutral-white: #fafafa;
+}
+
+/* --- tipografia --- */
+
+:root {
+  --font-h1-w-767: 36px;
+  --font-h1-w-480: 36px;
+  --font-h1-desktop: 26px;
+
+  --font-h2-w-767: 36px;
+  --font-h2-w-480: 36px;
+  --font-h2-desktop: 26px;
+
+  --font-p-w-767: 18px;
+  --font-p-w-480: 16px;
+  --font-p-desktop: 16px;
+
+  --font-a-w-767: 18px;
+  --font-a-w-480: 20px;
+  --font-a-desktop: 16px;
+}
+
 /* Reset */
 * {
   margin: 0;
@@ -12,42 +44,59 @@
 
 /* Body (geral) */
 body {
-  background: linear-gradient(135deg, #d8d2e8, #a799c7);
-  font-family: "Poppins", sans-serif;
-  margin: 0;
-  padding-right: 40px;
-  padding-left: 40px;
-  padding-top: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  min-height: 100vh;
-  color: #333;
-  box-sizing: border-box;
   justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  
+  background: var(--color-gradient);
+}
+
+section.hero {
+  display: none;
 }
 
 .content-box {
-  background-color: #ede9f9;
-  padding: 30px 40px;
-  border-radius: 20px;
-  width: 100%;
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
-  box-sizing: border-box;
   text-align: left;
+  padding: 30px 40px;
+  box-shadow: 10px 10px 20px rgba(18, 18, 18, 0.1);
+  border-radius: 20px;
+  background-color: var(--color-primary-lavanda-50);
 }
 
 .content-box h1,
 .content-box h2 {
-  margin: 0 0 20px 0;
-  font-size: 26px;
-  color: #3f3c62;
+  margin-bottom: 20px;
+  font-size: var(--font-h1-desktop);
+  color: var(--color-primary-lavanda-150);
 }
 
 .content-box p {
-  font-size: 16px;
-  line-height: 1.6;
-  color: #4a466a;
+  font-size: var(--font-p-desktop);
+  color: var(--color-primary-lavanda-150);
+}
+
+/* esse parte de ul li e p:last-of-type estava inline */
+.content-box ul {
+  text-align: left; 
+  padding-left: 20px; 
+  color: var(--color-primary-lavanda-150);
+}
+
+.content-box li {
+  margin-bottom: 10px;
+}
+
+.content-box > p:last-of-type {
+  margin-top: 20px;
+}
+
+/* Esse código também estava INLINE em uma tag hr que n fazia sentido */
+div.line {
+  margin: 25px 0;
+  border: 0; 
+  border-top: 2px solid var(--color-primary-lavanda-100); 
 }
 
 /* Transição inicial */
@@ -62,14 +111,10 @@ body {
   }
 }
 
+/* A única coisa que essa main estava fazendo era o max width e a animação
+ o resto era redudante */
 .main-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
   max-width: 700px;
-  text-align: center;
   animation: fadeIn 0.6s ease-out forwards;
 }
 
@@ -77,70 +122,68 @@ body {
 nav {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin-bottom: 60px;
   flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  margin-bottom: 60px;
   scale: 0.96;
 }
 
 nav a {
-  text-decoration: none;
-  color: #3f3c62;
-  background-color: #ede9f9;
   padding: 10px 25px;
   border-radius: 20px;
-  font-size: 16px;
+  font-size: var(--font-a-desktop);
   font-weight: 600;
+  text-decoration: none;
+  color: var(--color-primary-lavanda-150);
+  background-color: var(--color-primary-lavanda-50);
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 nav a.active,
 nav a:hover {
-  background-color: #3f3c62;
-  color: #ffffff;
+  background-color: var(--color-primary-lavanda-150);
+  color: var(--color-neutral-white);
   transform: translateY(-3px);
 }
 
 /* Footer */
 footer {
-  border-radius: 30px 30px 0 0;
-  width: 100%;
-  background-color: #c9c0e0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 95%;
   margin-top: 20px;
   padding: 20px 0;
+  border-radius: 30px 30px 0 0;
+  background-color: var(--color-primary-lavanda-100);
 }
 
 footer a,
 #link {
   position: relative;
-  color: #3f3c62;
-  text-decoration: none;
   font-weight: 600;
   margin-bottom: 15px;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  text-decoration: none;
   transition: color 0.3s ease;
+  color: var(--color-primary-lavanda-150);
 }
 
 footer a::after,
 #link::after {
   content: "";
   position: absolute;
-  left: 0;
   bottom: -2px;
+  left: 0;
   width: 0%;
   height: 2px;
-  background-color: #3f3c62;
   transition: width 0.3s ease;
+  background-color: var(--color-primary-lavanda-150);
 }
 
-footer a:hover,
-#link:hover {
-  color: #3f3c62;
-}
+/* tinha um hover inútil aqui */
 
 footer a:hover::after,
 #link:hover::after {
@@ -149,14 +192,10 @@ footer a:hover::after,
 
 footer p {
   text-align: center;
-  margin: 0;
-  font-size: 0.9rem;
-  color: #3f3c62;
+  font-size: var(--font-p-desktop);
+  color: var(--color-primary-lavanda-150);
 }
 
-.hero-mobile {
-  display: none;
-}
 
 /* Responsividade */
 @media (max-width: 720px) {
@@ -165,10 +204,10 @@ footer p {
   }
 
   footer {
-    padding-bottom: 10px;
     padding-top: 15px;
-    border-radius: 30px 30px 0 0;
+    padding-bottom: 10px;
     margin-bottom: 0;
+    border-radius: 30px 30px 0 0;
   }
 
   nav {
@@ -184,7 +223,7 @@ footer p {
   }
   img {
     border-radius: 15px;
-    border: 1px solid #ede9f9;
+    border: 1px solid var(--color-primary-lavanda-50);
   }
   nav {
     margin-top: 30px;
@@ -196,64 +235,55 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     width: 370px;
     height: 50px;
-    text-align: center;
     padding: 8px;
-    font-size: 20px;
+    font-size: var(--font-a-w-480);
   }
 
   .content-box {
-    width: 100%;
+    width: 92%;
     margin: 0;
     padding: 30px;
     border-radius: 15px;
   }
 
   .content-box h1 {
-    font-size: 40px;
+    font-size: var(--font-h1-w-480);
     font-weight: 600;
   }
 
-  .content-box h1 {
-    font-size: 1.1rem;
-    line-height: 1.3rem;
-  }
-
   .content-box h2 {
-    font-size: 1rem;
-  }
-
-  .content-box p,
-  .content-box li {
-    font-size: 0.8rem;
-    line-height: 1.2rem;
+    font-size: var(--font-h1-w-480);
   }
 
   ul {
     padding-left: 15px;
   }
+
   ul > li,
   strong {
     font-size: 20px;
   }
-  ul > li > p {
-    font-size: 16px;
+
+  ul>li>p {
+    font-size: var(--font-p-w-480);
   }
 
   footer {
-    font-size: 0.8rem;
+    width: 92%;
     padding: 8px 0;
-    border-radius: 30px;
+    border-radius: 15px 15px 0 0;
   }
 
   footer a {
-    font-size: 0.85rem;
+    font-size: var(--font-a-w-480);
   }
 
   textarea {
     width: 100%;
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   button,

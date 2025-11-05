@@ -1,16 +1,16 @@
-# 📦  Porque o Java Exige - Pull Request: Onboarding
+# Porque o Java Exige - Pull Request: Onboarding
 
 Bem-vindo(a) a Pull Request deste repositório! Preencha os campos abaixo antes de iniciar sua PR 
 
 ---
 
-## 👤 Usuário
+## Usuário
 <!-- Ex: @GoBrazill(melhor programador) -->
-**Nome de usuário do Github:** 
+**>Nome de usuário do Github<** 
 
 ---
 
-## ✍️ Descrição
+## Descrição
 <!-- Descreva de forma breve as alterações feitas -->
 **Resumo das alterações:**
 
@@ -18,12 +18,16 @@ Bem-vindo(a) a Pull Request deste repositório! Preencha os campos abaixo antes 
 
 ---
 
-## 🧪 Como testar
-<!-- Passos para testar essa PR localmente -->
-1. Clone o repositório e acesse a branch:
+## Como testar
+<!-- Passos para fazer alterções nesse projeto -->
+
+1. Clone o repositório e acesse a sua branch:
    ```bash
-   git checkout nome-da-branch
+   <!-- prefixo -b troca para esta branch assim que for criada, 
+   se sua branch já está criada tire o -b -->
+   Ex: git checkout -b nome-da-minha-branch
    ```
+
 2. Execute os seguintes passos:
    - [ ] Passo 1: Abra o live server
    - [ ] Passo 2: alterar os arquivos
@@ -31,16 +35,18 @@ Bem-vindo(a) a Pull Request deste repositório! Preencha os campos abaixo antes 
 
 ---
 
-## ✅ Checklist
+## Checklist
 - [ ] Verifiquei se este PR segue o padrão descrito
 - [ ] Adicionei todos os campos solicitados
 - [ ] Testei localmente e está funcionando como esperado
 - [ ] Adicionei prints ou evidências (se necessário)
 - [ ] Verifiquei se a nomeação de arquivos segue kebab case
+- [ ] Adicionei pelo menos uma imagem a pull request
+- [ ] O lucas vai aceitar a pull request ?
 
 ---
 
-## 🔗 Issues Relacionadas
+## Issues Relacionadas
 <!-- Essa PR resolve alguma issue? -->
 <!-- Ex: Closes #01 -->
 - Closes #
@@ -50,3 +56,8 @@ Bem-vindo(a) a Pull Request deste repositório! Preencha os campos abaixo antes 
 ## 💬 Observações
 <!-- Algum ponto de atenção, dúvida ou sugestão? -->
 - 
+
+---
+
+## Imagens e prints
+<!-- Obrigatório adicionar pelo menos uma imagem -->
