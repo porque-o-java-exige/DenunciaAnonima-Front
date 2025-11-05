@@ -42,6 +42,7 @@ Bem-vindo(a) a Pull Request deste repositório! Preencha os campos abaixo antes 
 - [ ] Adicionei prints ou evidências (se necessário)
 - [ ] Verifiquei se a nomeação de arquivos segue kebab case
 - [ ] Adicionei pelo menos uma imagem a pull request
+- [ ] O lucas vai aceitar a pull request ?
 
 ---
 
