@@ -13,26 +13,59 @@ Safe Speak tem a proposta de trazer um lugar de conforto para vítimas de violê
 ``` Website
 ├── src/                    
 │   ├── assets/           
-│   │   └── images/
+│   │   ├── images/
+│   │   │   ├── icons/
+│   │   │   |   ├── github.svg
+|   │   │   |   │
+│   │   │   |   └── linkedin.svg
+│   │   │   |
+│   │   │   ├── people/
+│   │   │   │   ├── GabrielVereda.png
+|   │   │   │   │
+│   │   │   │   ├── RodrigoJunior.jpeg
+|   │   │   │   │
+│   │   │   │   ├── RyanFerreira.png
+|   │   │   │   │
+│   │   │   │   └── ViniciusAraujo.jpeg
+│   │   │   │
+│   │   │   └── heroimage.svg
+│   │   │   
+│   │   └── screenshots/
+│   │       ├── denuncia_mulher.png
+|   │       │
+│   │       ├── denuncia.png
+│   │       │   
+|   │       ├── inicio.png
+│   │       │
+│   │       └── numeros.png
 │   │   
 │   ├── js/  
 │   │   ├── denuncia.js
 │   │   │
-│   │   └── mulher.js
+│   │   └── mulher.js   
 │   │
+│   ├── pages/
+│   |   ├── denuncia-geral.html
+|   |   │
+│   |   ├── numeros-emergencia.html
+|   |   │
+│   |   ├── sobre.html
+|   |   │
+│   |   └── violencia-mulher.html
+│   |
 │   └── style/     
 │       ├── forms.css
-|       │
+│       │
 │       ├── global.css
 │       │   
-|       ├── numeros.css
+│       ├── numeros.css
 │       │
-│       └── style.css   
-│
-├── LICENSE
+│       └── style.css
 │
 ├── index.html
 │   
+├── LICENSE
+│
 └── README.md
 ```
 
@@ -54,11 +87,53 @@ Safe Speak tem a proposta de trazer um lugar de conforto para vítimas de violê
 
 ---
 
+## 🌐 Demonstração
+
+🔗 **Acesse o site:** [site-denuncia-safe-speak.vercel.app](https://site-denuncia-safe-speak.vercel.app)
+
+---
+
+## 📸 Capturas de Tela
+
+### 🏠 Página Inicial
+Apresenta informações sobre o portal e as principais leis de proteção no Brasil.  
+Inclui referências à **Lei Maria da Penha**, **Lei do Feminicídio**, **Lei de Importunação Sexual**, entre outras.
+
+![Página Inicial](./src/assets/screenshots/inicio.png)
+
+---
+
+### 🚨 Denúncias gerais
+Página dedicada ao registro de **denúncias contra qualquer pessoa/empresa**, com um campo de relato seguro e botão de envio.
+
+![Denúncia Geral](./src/assets/screenshots/denuncia.png)
+
+---
+
+### 🚨 Violência Contra Mulher
+Página dedicada ao registro de **denúncias específicas de violência contra a mulher**, com um campo de relato seguro e botão de envio.
+
+![Violência Contra Mulher](./src/assets/screenshots/denuncia_mulher.png)
+
+---
+
+### 📞 Números de Emergência
+Reúne os principais números de emergência nacionais, com destaque para:
+- **180** — Central de Atendimento à Mulher  
+- **190** — Polícia Militar  
+- **192** — SAMU  
+- **100** — Disque Direitos Humanos  
+
+![Números de Emergência](./src/assets/screenshots/numeros.png)
+
+---
+
 ### Créditos
-@GoBrazill (Melhor contribuidor) 
+
+@BielVereda
+
+@GoBrazill 
 
 @RodrigoJPSilva
 
 @srjuninn
-
-@BielVereda
