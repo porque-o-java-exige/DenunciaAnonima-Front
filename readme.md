@@ -3,7 +3,7 @@
 
 
 ### Introdução
-Safe Speak tem a proposta de trazer um lugar de conforto para vítimas de violência, mas não conseguem denunciar pelos números de emêrgencia e deúncia convencionais. Com a ajuda deste site é possível fazer a denúncia por escrita e transformar em fala, e então armzenar esses dados para uso posterior.
+Safe Speak tem a proposta de trazer um lugar de conforto para vítimas de violência que não conseguem denunciar por meios convencionais de denuncia como uma ligação ou prestando queixa. Com a ajuda deste site é possível fazer a denúncia por escrita e transformar em fala, nós então armzenamos esses dados para uso posterior contra o agressor(a).
 
 ---
 
