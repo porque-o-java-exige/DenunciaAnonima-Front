@@ -12,22 +12,52 @@
 
 /* --- tipografia --- */
 
+/* isso faz com que 1 rem seja igual a 10px */
+html {
+  font-size: 62.5%;
+}
+
+/* Achei essa forma mais prática para fazer a responsividade das letras sem precisar 
+  definir o tamanho da fonte em toda classe*/
 :root {
-  --font-h1-w-767: 36px;
-  --font-h1-w-480: 36px;
-  --font-h1-desktop: 26px;
+  --font-h1: 2.6rem;
+  --font-h2: 2.6rem;
+  --font-p: 1.6rem;
+  --font-a: 1.6rem;
+}
 
-  --font-h2-w-767: 36px;
-  --font-h2-w-480: 36px;
-  --font-h2-desktop: 26px;
+@media (max-width: 767px) {
+  :root {
+    --font-h1: 3.6rem;
+    --font-h2: 3.6rem;
+    --font-p: 1.8rem;
+    --font-a: 1.8rem;
+  }
+}
 
-  --font-p-w-767: 18px;
-  --font-p-w-480: 16px;
-  --font-p-desktop: 16px;
+@media (max-width: 480px) {
+  :root {
+    --font-h1: 3.6rem;
+    --font-h2: 3.6rem;
+    --font-p: 1.6rem;
+    --font-a: 2rem;
+  }
+}
 
-  --font-a-w-767: 18px;
-  --font-a-w-480: 20px;
-  --font-a-desktop: 16px;
+h1 {
+  font-size: var(--font-h1)
+}
+
+h2 {
+  font-size: var(--font-h2);
+}
+
+a {
+  font-size: var(--font-a);
+}
+
+p {
+  font-size: var(--font-p);
 }
 
 /* Reset */
@@ -65,13 +95,15 @@ section.hero {
 .content-box h1,
 .content-box h2 {
   margin-bottom: 20px;
-  font-size: var(--font-h1-desktop);
   color: var(--clr-primary-lavanda-150);
 }
 
 .content-box p {
-  font-size: var(--font-p-desktop);
   color: var(--clr-primary-lavanda-150);
+}
+
+.content-box strong {
+  font-size: var(--font-p);
 }
 
 /* esse parte de ul li e p:last-of-type estava inline */
@@ -129,7 +161,6 @@ nav {
 nav a {
   padding: 10px 25px;
   border-radius: 20px;
-  font-size: var(--font-a-desktop);
   font-weight: 600;
   text-decoration: none;
   color: var(--clr-primary-lavanda-150);
@@ -162,7 +193,6 @@ footer a,
   position: relative;
   font-weight: 600;
   margin-bottom: 15px;
-  font-size: 1rem;
   text-decoration: none;
   transition: color 0.3s ease;
   color: var(--clr-primary-lavanda-150);
@@ -180,8 +210,6 @@ footer a::after,
   background-color: var(--clr-primary-lavanda-150);
 }
 
-/* tinha um hover inútil aqui */
-
 footer a:hover::after,
 #link:hover::after {
   width: 100%;
@@ -189,13 +217,12 @@ footer a:hover::after,
 
 footer p {
   text-align: center;
-  font-size: var(--font-p-desktop);
   color: var(--clr-primary-lavanda-150);
 }
 
 
 /* Responsividade */
-@media (max-width: 720px) {
+@media (max-width: 767px) {
   .hero-mobile {
     display: none;
   }
@@ -236,7 +263,6 @@ footer p {
     width: 370px;
     height: 50px;
     padding: 8px;
-    font-size: var(--font-a-w-480);
   }
 
   .content-box {
@@ -247,12 +273,7 @@ footer p {
   }
 
   .content-box h1 {
-    font-size: var(--font-h1-w-480);
     font-weight: 600;
-  }
-
-  .content-box h2 {
-    font-size: var(--font-h1-w-480);
   }
 
   ul {
@@ -261,11 +282,7 @@ footer p {
 
   ul > li,
   strong {
-    font-size: 20px;
-  }
-
-  ul>li>p {
-    font-size: var(--font-p-w-480);
+    font-size: 2rem;
   }
 
   footer {
@@ -274,20 +291,16 @@ footer p {
     border-radius: 15px 15px 0 0;
   }
 
-  footer a {
-    font-size: var(--font-a-w-480);
-  }
-
   textarea {
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
 
   button,
   input[type="submit"] {
     width: 100%;
     padding: 8px;
-    font-size: 0.6rem;
+    font-size: 1rem;
     align-items: center;
   }
 
@@ -307,11 +320,11 @@ footer p {
   }
 
   .emergency-card h3 {
-    font-size: 14px;
+    font-size: 1.4rem;
     margin-bottom: 3px;
   }
 
   .emergency-card p {
-    font-size: 10px;
+    font-size: 1rem;
   }
 }
