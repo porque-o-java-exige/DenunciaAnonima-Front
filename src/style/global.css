@@ -1,13 +1,13 @@
 /* --- cores --- */
 
 :root {
-  --color-gradient: linear-gradient(135deg, #d8d2e8, #a799c7);
-  --color-primary-lavanda-50: #ede9f9;
-  --color-primary-lavanda-100: #c9c0e0;
-  --color-primary-lavanda-150: #3f3c62;
+  --clr-gradient: linear-gradient(135deg, #d8d2e8, #a799c7);
+  --clr-primary-lavanda-50: #ede9f9;
+  --clr-primary-lavanda-100: #c9c0e0;
+  --clr-primary-lavanda-150: #3f3c62;
   
-  --color-neutral-black: #121212;
-  --color-neutral-white: #fafafa;
+  --clr-neutral-black: #121212;
+  --clr-neutral-white: #fafafa;
 }
 
 /* --- tipografia --- */
@@ -47,7 +47,7 @@ body {
   align-items: center;
   height: 100vh;
   
-  background: var(--color-gradient);
+  background: var(--clr-gradient);
 }
 
 section.hero {
@@ -59,26 +59,26 @@ section.hero {
   padding: 30px 40px;
   box-shadow: 10px 10px 20px rgba(18, 18, 18, 0.1);
   border-radius: 20px;
-  background-color: var(--color-primary-lavanda-50);
+  background-color: var(--clr-primary-lavanda-50);
 }
 
 .content-box h1,
 .content-box h2 {
   margin-bottom: 20px;
   font-size: var(--font-h1-desktop);
-  color: var(--color-primary-lavanda-150);
+  color: var(--clr-primary-lavanda-150);
 }
 
 .content-box p {
   font-size: var(--font-p-desktop);
-  color: var(--color-primary-lavanda-150);
+  color: var(--clr-primary-lavanda-150);
 }
 
 /* esse parte de ul li e p:last-of-type estava inline */
 .content-box ul {
   text-align: left; 
   padding-left: 20px; 
-  color: var(--color-primary-lavanda-150);
+  color: var(--clr-primary-lavanda-150);
 }
 
 .content-box li {
@@ -93,7 +93,7 @@ section.hero {
 div.line {
   margin: 25px 0;
   border: 0; 
-  border-top: 2px solid var(--color-primary-lavanda-100); 
+  border-top: 2px solid var(--clr-primary-lavanda-100); 
 }
 
 /* Transição inicial */
@@ -132,15 +132,15 @@ nav a {
   font-size: var(--font-a-desktop);
   font-weight: 600;
   text-decoration: none;
-  color: var(--color-primary-lavanda-150);
-  background-color: var(--color-primary-lavanda-50);
+  color: var(--clr-primary-lavanda-150);
+  background-color: var(--clr-primary-lavanda-50);
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 nav a.active,
 nav a:hover {
-  background-color: var(--color-primary-lavanda-150);
-  color: var(--color-neutral-white);
+  background-color: var(--clr-primary-lavanda-150);
+  color: var(--clr-neutral-white);
   transform: translateY(-3px);
 }
 
@@ -154,7 +154,7 @@ footer {
   margin-top: 20px;
   padding: 20px 0;
   border-radius: 30px 30px 0 0;
-  background-color: var(--color-primary-lavanda-100);
+  background-color: var(--clr-primary-lavanda-100);
 }
 
 footer a,
@@ -165,7 +165,7 @@ footer a,
   font-size: 1rem;
   text-decoration: none;
   transition: color 0.3s ease;
-  color: var(--color-primary-lavanda-150);
+  color: var(--clr-primary-lavanda-150);
 }
 
 footer a::after,
@@ -177,7 +177,7 @@ footer a::after,
   width: 0%;
   height: 2px;
   transition: width 0.3s ease;
-  background-color: var(--color-primary-lavanda-150);
+  background-color: var(--clr-primary-lavanda-150);
 }
 
 /* tinha um hover inútil aqui */
@@ -190,7 +190,7 @@ footer a:hover::after,
 footer p {
   text-align: center;
   font-size: var(--font-p-desktop);
-  color: var(--color-primary-lavanda-150);
+  color: var(--clr-primary-lavanda-150);
 }
 
 
@@ -220,7 +220,7 @@ footer p {
   }
   img {
     border-radius: 15px;
-    border: 1px solid var(--color-primary-lavanda-50);
+    border: 1px solid var(--clr-primary-lavanda-50);
   }
   nav {
     margin-top: 30px;
