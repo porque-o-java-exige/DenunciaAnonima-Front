@@ -5,7 +5,7 @@ Bem-vindo(a) a Pull Request deste repositório! Preencha os campos abaixo antes 
 ---
 
 ## Usuário
-<!-- Ex: @GoBrazill(melhor programador) -->
+<!-- Ex: @srjuninn (o javeiro das telinhas do html) -->
 **>Nome de usuário do Github<** 
 
 ---
@@ -43,6 +43,7 @@ Bem-vindo(a) a Pull Request deste repositório! Preencha os campos abaixo antes 
 - [ ] Verifiquei se a nomeação de arquivos segue kebab case
 - [ ] Adicionei pelo menos uma imagem a pull request
 - [ ] O lucas vai aceitar a pull request ?
+- [ ] A fiama vai aceitar a pull request antes do lucas ?
 
 ---
 
@@ -55,6 +56,8 @@ Bem-vindo(a) a Pull Request deste repositório! Preencha os campos abaixo antes 
 
 ## 💬 Observações
 <!-- Algum ponto de atenção, dúvida ou sugestão? -->
+<!-- O java exige uma observação 👍 -->
+<!-- O copilot é a melhor I.A e vai dominar o mundo -->
 - 
 
 ---
