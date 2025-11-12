@@ -223,13 +223,9 @@ footer p {
 
 
 /* Responsividade */
-@media (min-width: 768px) {
+@media (max-width: 769px) {
   .hero-mobile {
     display: none;
-  }
-
-  .content-box{
-    margin-top: 2000px;
   }
 
   .content-box h1,
