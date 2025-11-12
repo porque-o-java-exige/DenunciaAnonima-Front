@@ -26,7 +26,7 @@ html {
   --font-a: 1.6rem;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   :root {
     --font-h1: 3.6rem;
     --font-h2: 3.6rem;
@@ -114,6 +114,7 @@ section.hero {
 }
 
 .content-box li {
+  margin-top: 15px;
   margin-bottom: 10px;
 }
 
@@ -222,10 +223,31 @@ footer p {
 
 
 /* Responsividade */
-@media (max-width: 767px) {
+@media (min-width: 768px) {
   .hero-mobile {
     display: none;
   }
+
+  .content-box{
+    margin-top: 2000px;
+  }
+
+  .content-box h1,
+  .content-box h2 {
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /* esse estilo não estava sendo aplicado */
+  .content-box > :last-child {
+    font-size: 20px;
+  }
+
+  .hero-mobile {
+    margin-top: 20px;
+  }
+
 
   footer {
     padding-top: 15px;
