@@ -1,5 +1,8 @@
-/* Importando estilização geral */
 @import url('./global.css');
+
+body {
+    height: 100vh;
+}
 
 /* Estilos para a página de Números de Emergência */
 .emergency-grid {

@@ -1,5 +1,8 @@
-/* Importando estilização geral */
 @import url('./global.css');
+
+body {
+    height: 100vh;
+}
 
 /* Área de texto para denúncias */
 textarea {
