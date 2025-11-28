@@ -1,6 +1,6 @@
 
 /* Importando estilização geral */
-@import url('./global.css');
+@import url('/src/styles/global.css');
 
 /* Estilos para a página de Números de Emergência */
 .emergency-grid {
