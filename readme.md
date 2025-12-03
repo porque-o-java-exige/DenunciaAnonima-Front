@@ -53,14 +53,14 @@ Safe Speak tem a proposta de trazer um lugar de conforto para vítimas de violê
 |   |   │
 │   |   └── violencia-mulher.html
 │   |
-│   └── styles/     
+│   └── style/     
 │       ├── forms.css
 │       │
 │       ├── global.css
 │       │   
 │       ├── numeros.css
 │       │
-│       └── index.css
+│       └── style.css
 │
 ├── index.html
 │   
