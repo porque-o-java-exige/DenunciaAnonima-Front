@@ -1,6 +1,9 @@
-
 /* Importando estilização geral */
 @import url('/src/styles/global.css');
+
+body {
+    height: 100vh;
+}
 
 /* Estilos para a página de Números de Emergência */
 .emergency-grid {
@@ -10,27 +13,21 @@
 }
 
 .emergency-card {
-    background: #bcb1d8;
+    text-align: center;
+    margin-top: 20px;
     padding: 20px;
     border-radius: 15px;
-    text-align: center;
+    background-color: var(--clr-primary-lavanda-100);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-top: 20px;
 }
 
 .emergency-card:hover {
-    transform: translateY(-5px);
     box-shadow: 10px 10px 10px rgba(63, 60, 98, 0.4);
+    transform: translateY(-5px);
 }
 
 .emergency-card h3 {
+    font-size: 2.8rem;
     margin: 0 0 10px 0;
-    color: #3f3c62;
-    font-size: 28px;
-}
-
-.emergency-card p {
-    margin: 0;
-    font-size: 16px;
-    color: #3f3c62;
+    color: var(--clr-primary-lavanda-150);
 }

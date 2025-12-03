@@ -1,36 +1,62 @@
-/* Importando uma fonte do Google Fonts */
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;600&display=swap");
-
 /* --- cores --- */
-
 :root {
-  --color-gradient: linear-gradient(135deg, #d8d2e8, #a799c7);
-  --color-primary-lavanda-50: #ede9f9;
-  --color-primary-lavanda-100: #c9c0e0;
-  --color-primary-lavanda-150: #3f3c62;
+  --clr-gradient: linear-gradient(135deg, #d8d2e8, #a799c7);
+  --clr-primary-lavanda-50: #ede9f9;
+  --clr-primary-lavanda-100: #c9c0e0;
+  --clr-primary-lavanda-150: #3f3c62;
   
-  --color-neutral-black: #121212;
-  --color-neutral-white: #fafafa;
+  --clr-neutral-black: #121212;
+  --clr-neutral-white: #fafafa;
 }
 
 /* --- tipografia --- */
 
+/* isso faz com que 1 rem seja igual a 10px */
+html {
+  font-size: 62.5%;
+}
+
+/* Achei essa forma mais prática para fazer a responsividade das letras sem precisar 
+  definir o tamanho da fonte em toda classe*/
 :root {
-  --font-h1-w-767: 36px;
-  --font-h1-w-480: 36px;
-  --font-h1-desktop: 26px;
+  --font-h1: 2.6rem;
+  --font-h2: 2.6rem;
+  --font-p: 1.6rem;
+  --font-a: 1.6rem;
+}
 
-  --font-h2-w-767: 36px;
-  --font-h2-w-480: 36px;
-  --font-h2-desktop: 26px;
+@media (max-width: 768px) {
+  :root {
+    --font-h1: 3.6rem;
+    --font-h2: 3.6rem;
+    --font-p: 1.8rem;
+    --font-a: 1.8rem;
+  }
+}
 
-  --font-p-w-767: 18px;
-  --font-p-w-480: 16px;
-  --font-p-desktop: 16px;
+@media (max-width: 480px) {
+  :root {
+    --font-h1: 3.6rem;
+    --font-h2: 3.6rem;
+    --font-p: 1.6rem;
+    --font-a: 2rem;
+  }
+}
 
-  --font-a-w-767: 18px;
-  --font-a-w-480: 20px;
-  --font-a-desktop: 16px;
+h1 {
+  font-size: var(--font-h1)
+}
+
+h2 {
+  font-size: var(--font-h2);
+}
+
+a {
+  font-size: var(--font-a);
+}
+
+p {
+  font-size: var(--font-p);
 }
 
 /* Reset */
@@ -47,9 +73,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
-  
-  background: var(--color-gradient);
+  align-items: center;  
+  background: var(--clr-gradient);
 }
 
 section.hero {
@@ -59,31 +84,35 @@ section.hero {
 .content-box {
   text-align: left;
   padding: 30px 40px;
-  box-shadow: 10px 10px 20px rgba(18, 18, 18, 0.1);
+  margin: 40px 0;
   border-radius: 20px;
-  background-color: var(--color-primary-lavanda-50);
+  box-shadow: 10px 10px 20px rgba(18, 18, 18, 0.1);
+  background-color: var(--clr-primary-lavanda-50);
 }
 
 .content-box h1,
 .content-box h2 {
   margin-bottom: 20px;
-  font-size: var(--font-h1-desktop);
-  color: var(--color-primary-lavanda-150);
+  color: var(--clr-primary-lavanda-150);
 }
 
 .content-box p {
-  font-size: var(--font-p-desktop);
-  color: var(--color-primary-lavanda-150);
+  color: var(--clr-primary-lavanda-150);
+}
+
+.content-box strong {
+  font-size: var(--font-p);
 }
 
 /* esse parte de ul li e p:last-of-type estava inline */
 .content-box ul {
   text-align: left; 
   padding-left: 20px; 
-  color: var(--color-primary-lavanda-150);
+  color: var(--clr-primary-lavanda-150);
 }
 
 .content-box li {
+  margin-top: 15px;
   margin-bottom: 10px;
 }
 
@@ -95,7 +124,7 @@ section.hero {
 div.line {
   margin: 25px 0;
   border: 0; 
-  border-top: 2px solid var(--color-primary-lavanda-100); 
+  border-top: 2px solid var(--clr-primary-lavanda-100); 
 }
 
 /* Transição inicial */
@@ -124,25 +153,23 @@ nav {
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 20px;
-  margin-bottom: 60px;
   scale: 0.96;
 }
 
 nav a {
   padding: 10px 25px;
   border-radius: 20px;
-  font-size: var(--font-a-desktop);
   font-weight: 600;
   text-decoration: none;
-  color: var(--color-primary-lavanda-150);
-  background-color: var(--color-primary-lavanda-50);
+  color: var(--clr-primary-lavanda-150);
+  background-color: var(--clr-primary-lavanda-50);
   transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
 }
 
 nav a.active,
 nav a:hover {
-  background-color: var(--color-primary-lavanda-150);
-  color: var(--color-neutral-white);
+  background-color: var(--clr-primary-lavanda-150);
+  color: var(--clr-neutral-white);
   transform: translateY(-3px);
 }
 
@@ -153,10 +180,9 @@ footer {
   justify-content: center;
   align-items: center;
   width: 95%;
-  margin-top: 20px;
   padding: 20px 0;
   border-radius: 30px 30px 0 0;
-  background-color: var(--color-primary-lavanda-100);
+  background-color: var(--clr-primary-lavanda-100);
 }
 
 footer a,
@@ -164,10 +190,9 @@ footer a,
   position: relative;
   font-weight: 600;
   margin-bottom: 15px;
-  font-size: 1rem;
   text-decoration: none;
   transition: color 0.3s ease;
-  color: var(--color-primary-lavanda-150);
+  color: var(--clr-primary-lavanda-150);
 }
 
 footer a::after,
@@ -179,10 +204,8 @@ footer a::after,
   width: 0%;
   height: 2px;
   transition: width 0.3s ease;
-  background-color: var(--color-primary-lavanda-150);
+  background-color: var(--clr-primary-lavanda-150);
 }
-
-/* tinha um hover inútil aqui */
 
 footer a:hover::after,
 #link:hover::after {
@@ -191,16 +214,32 @@ footer a:hover::after,
 
 footer p {
   text-align: center;
-  font-size: var(--font-p-desktop);
-  color: var(--color-primary-lavanda-150);
+  color: var(--clr-primary-lavanda-150);
 }
 
 
 /* Responsividade */
-@media (max-width: 720px) {
+@media (max-width: 769px) {
   .hero-mobile {
     display: none;
   }
+
+  .content-box h1,
+  .content-box h2 {
+    text-align: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  /* esse estilo não estava sendo aplicado */
+  .content-box > :last-child {
+    font-size: 20px;
+  }
+
+  .hero-mobile {
+    margin-top: 20px;
+  }
+
 
   footer {
     padding-top: 15px;
@@ -222,7 +261,7 @@ footer p {
   }
   img {
     border-radius: 15px;
-    border: 1px solid var(--color-primary-lavanda-50);
+    border: 1px solid var(--clr-primary-lavanda-50);
   }
   nav {
     margin-top: 30px;
@@ -238,7 +277,6 @@ footer p {
     width: 370px;
     height: 50px;
     padding: 8px;
-    font-size: var(--font-a-w-480);
   }
 
   .content-box {
@@ -249,12 +287,7 @@ footer p {
   }
 
   .content-box h1 {
-    font-size: var(--font-h1-w-480);
     font-weight: 600;
-  }
-
-  .content-box h2 {
-    font-size: var(--font-h1-w-480);
   }
 
   ul {
@@ -263,11 +296,7 @@ footer p {
 
   ul > li,
   strong {
-    font-size: 20px;
-  }
-
-  ul>li>p {
-    font-size: var(--font-p-w-480);
+    font-size: 2rem;
   }
 
   footer {
@@ -276,20 +305,16 @@ footer p {
     border-radius: 15px 15px 0 0;
   }
 
-  footer a {
-    font-size: var(--font-a-w-480);
-  }
-
   textarea {
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.6rem;
   }
 
   button,
   input[type="submit"] {
     width: 100%;
     padding: 8px;
-    font-size: 0.6rem;
+    font-size: 1rem;
     align-items: center;
   }
 
@@ -309,11 +334,11 @@ footer p {
   }
 
   .emergency-card h3 {
-    font-size: 14px;
+    font-size: 1.4rem;
     margin-bottom: 3px;
   }
 
   .emergency-card p {
-    font-size: 10px;
+    font-size: 1rem;
   }
 }
