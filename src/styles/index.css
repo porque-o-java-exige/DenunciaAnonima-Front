@@ -1,5 +1,5 @@
 /* Importando estilização geral */
-@import url('./global.css');
+@import url('/src/styles/global.css');
 
 .content-box li{
     margin-top: 15px;
