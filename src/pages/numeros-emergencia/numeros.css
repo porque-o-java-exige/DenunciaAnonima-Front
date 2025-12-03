@@ -1,4 +1,5 @@
-@import url('./global.css');
+/* Importando estilização geral */
+@import url('/src/styles/global.css');
 
 body {
     height: 100vh;
