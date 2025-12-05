@@ -8,7 +8,8 @@
 .cards-container {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
   gap: 25px;
   margin-top: 25px;
 }
@@ -16,7 +17,7 @@
 /* ====== Card dos integrantes ====== */
 .card-integrante {
   text-align: center;
-  width: 220px;
+  width: 180px;
   padding: 20px;
   border-radius: 20px;
   box-shadow: 10px 10px 20px rgba(18, 18, 18, 0.1);
@@ -29,25 +30,26 @@
   box-shadow: 10px 10px 25px rgba(18, 18, 18, 0.15);
 }
 
-.card-integrante img {
+.card-integrante > img {
   object-fit: cover;
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   margin-bottom: 10px;
   border-radius: 50%;
-  border: 3px solid #d8d2e8;
+  border: 3px solid var(--clr-primary-lavanda-100);
 }
 
 .card-integrante h3 {
   font-size: 1.8rem;
-  color: var(--clr-primary-lavanda-150);
   margin: 10px 0;
   margin-bottom: 30px;
+  color: var(--clr-primary-lavanda-150);
 }
 
 .content-box {
   margin-bottom: 40px;
 }
+
 /* ====== Links ====== */
 .links {
   display: flex;
@@ -58,8 +60,10 @@
 .links img {
   width: 50px;
   height: 50px;
+  padding: 5px;
+  border-radius: 50%;
+  border: 3px solid var(--clr-primary-lavanda-100);
   transition: transform 0.2s ease;
-  padding: 4px;
 }
 
 .links img:hover {
@@ -67,19 +71,20 @@
 }
 
 /* ====== Responsividade ====== */
-@media (max-width: 480px) {
+@media (min-width: 700px) {
   .cards-container {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: start;
   }
 
   .card-integrante {
-    width: 85%;
+    width: 220px;
   }
 
   .card-integrante img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
   }
 
   .links img {
