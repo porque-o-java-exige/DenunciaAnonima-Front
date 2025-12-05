@@ -4,7 +4,7 @@
   --clr-primary-lavanda-50: #ede9f9;
   --clr-primary-lavanda-100: #c9c0e0;
   --clr-primary-lavanda-150: #3f3c62;
-  
+
   --clr-neutral-black: #121212;
   --clr-neutral-white: #fafafa;
 }
@@ -18,14 +18,14 @@ html {
 
 /* Achei essa forma mais prática para fazer a responsividade das letras sem precisar 
   definir o tamanho da fonte em toda classe*/
-:root {
-  --font-h1: 2.6rem;
-  --font-h2: 2.6rem;
-  --font-p: 1.6rem;
-  --font-a: 1.6rem;
-}
+  :root {
+    --font-h1: 3.6rem;
+    --font-h2: 3.6rem;
+    --font-p: 1.6rem;
+    --font-a: 2rem;
+  }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   :root {
     --font-h1: 3.6rem;
     --font-h2: 3.6rem;
@@ -34,12 +34,13 @@ html {
   }
 }
 
-@media (max-width: 480px) {
+@media (min-width: 1280px) {
   :root {
-    --font-h1: 3.6rem;
-    --font-h2: 3.6rem;
+
+    --font-h1: 2.6rem;
+    --font-h2: 2.6rem;
     --font-p: 1.6rem;
-    --font-a: 2rem;
+    --font-a: 1.6rem;
   }
 }
 
@@ -75,7 +76,7 @@ body {
   justify-content: space-between;
   align-items: center;
   min-height: 100vh;
-  
+
   background: var(--clr-gradient);
 }
 
@@ -108,8 +109,8 @@ section.hero {
 
 /* esse parte de ul li e p:last-of-type estava inline */
 .content-box ul {
-  text-align: left; 
-  padding-left: 20px; 
+  text-align: left;
+  padding-left: 20px;
   color: var(--clr-primary-lavanda-150);
 }
 
@@ -118,15 +119,15 @@ section.hero {
   margin-bottom: 10px;
 }
 
-.content-box > p:last-of-type {
+.content-box>p:last-of-type {
   margin-top: 20px;
 }
 
 /* Esse código também estava INLINE em uma tag hr que n fazia sentido */
 div.line {
   margin: 25px 0;
-  border: 0; 
-  border-top: 2px solid var(--clr-primary-lavanda-100); 
+  border: 0;
+  border-top: 2px solid var(--clr-primary-lavanda-100);
 }
 
 /* Transição inicial */
@@ -135,6 +136,7 @@ div.line {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -143,19 +145,22 @@ div.line {
 
 /* A única coisa que essa main estava fazendo era o max width e a animação
  o resto era redudante */
+.content-wrapper {
+  max-width: 800px;
+}
+
 .main-content {
-  max-width: 700px;
+  width: 100%;
   animation: fadeIn 0.6s ease-out forwards;
 }
 
 /* NAV's */
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  gap: 10px;
+  width: 100%;
   margin-top: 20px;
-  scale: 0.96;
 }
 
 nav a {
@@ -234,7 +239,7 @@ footer p {
   }
 
   /* esse estilo não estava sendo aplicado */
-  .content-box > :last-child {
+  .content-box> :last-child {
     font-size: 20px;
   }
 
@@ -261,10 +266,12 @@ footer p {
     font-size: 14px;
     padding: 5px;
   }
+
   img {
     border-radius: 15px;
     border: 1px solid var(--clr-primary-lavanda-50);
   }
+
   nav {
     margin-top: 30px;
     flex-direction: column;
@@ -282,7 +289,6 @@ footer p {
   }
 
   .content-box {
-    width: 92%;
     margin: 0;
     padding: 30px;
     border-radius: 15px;
@@ -296,13 +302,12 @@ footer p {
     padding-left: 15px;
   }
 
-  ul > li,
+  ul>li,
   strong {
     font-size: 2rem;
   }
 
   footer {
-    width: 92%;
     padding: 8px 0;
     border-radius: 15px 15px 0 0;
   }
