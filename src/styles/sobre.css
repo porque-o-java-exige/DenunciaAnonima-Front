@@ -26,7 +26,7 @@
 }
 
 .card-integrante:hover {
-  transform: translateY(-6px);
+  transform: translateY(-5px);
   box-shadow: 10px 10px 25px rgba(18, 18, 18, 0.15);
 }
 
@@ -82,13 +82,9 @@
     width: 220px;
   }
 
-  .card-integrante img {
+  .card-integrante > img {
     width: 150px;
     height: 150px;
   }
 
-  .links img {
-    width: 50px;
-    height: 50px;
-  }
 }
