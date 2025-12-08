@@ -7,35 +7,42 @@
     <title>Violência Contra Mulher - Portal de Denúncia</title>
     <link rel="stylesheet" href="/src/pages/denuncia-mulher/denuncia-mulher.css">
     <script src="/src/pages/denuncia-mulher/denuncia-mulher.js" defer></script>
-    
+
     <!-- MetaDescription e keywords -->
-    <meta name="description" content="SafeSpeak é uma plataforma inteligente focada em comunicação segura, respostas precisas e ferramentas otimizadas para projetos profissionais. Rapidez, clareza e proteção em cada interação." />
-    <meta name="keywords" content="SafeSpeak, safespeak, comunicação segura, privacidade, denuncia, denuncia anonima, violencia" />
+    <meta name="description"
+        content="SafeSpeak é uma plataforma inteligente focada em comunicação segura, respostas precisas e ferramentas otimizadas para projetos profissionais. Rapidez, clareza e proteção em cada interação." />
+    <meta name="keywords"
+        content="SafeSpeak, safespeak, comunicação segura, privacidade, denuncia, denuncia anonima, violencia" />
 
     <!-- Importando a fonte -->
-    <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Outfit:wght@100..900&display=swap"
+        rel="stylesheet">
+
     <!-- Logo Site -->
-    <link rel="preload icon" as="image" type="image/svg+xml" size="64x64" href="/src/assets/images/icons/logoSafeSpeak.svg">
+    <link rel="preload icon" as="image" type="image/svg+xml" size="64x64"
+        href="/src/assets/images/icons/logoSafeSpeak.svg">
 </head>
 
 <body>
-    <nav>
-        <a href="/index.html">Início</a>
-        <a href="/src/pages/denuncia-geral/denuncia-geral.html">Denúncia Geral</a>
-        <a href="/src/pages/denuncia-mulher/denuncia-mulher.html" class="active">Violência contra mulher</a>
-        <a href="/src/pages/numeros-emergencia/numeros-emergencia.html">Números de emergência</a>
-    </nav>
+    <div class="content-wrapper">
+        <nav>
+            <a href="/index.html">Início</a>
+            <a href="/src/pages/denuncia-geral/denuncia-geral.html">Denúncia Geral</a>
+            <a href="/src/pages/denuncia-mulher/denuncia-mulher.html" class="active">Violência contra mulher</a>
+            <a href="/src/pages/numeros-emergencia/numeros-emergencia.html">Números de emergência</a>
+        </nav>
 
-    <main class="main-content">
-        <div class="content-box">
-            <h2>Denúncia de Violência Contra Mulher</h2>
-            <p>Este é um canal de denúncia específico para casos de violência contra a mulher. Relate o ocorrido com
-                segurança. Se precisar de ajuda imediata, ligue 180.</p>
-            <textarea id="denunciaText" placeholder="Descreva o ocorrido aqui..."></textarea>
-            <button id="submitBtn" class="submit-btn">Enviar Denúncia</button>
-        </div>
-    </main>
+        <main class="main-content">
+            <div class="content-box">
+                <h2>Denúncia de Violência Contra Mulher</h2>
+                <p>Este é um canal de denúncia específico para casos de violência contra a mulher. Relate o ocorrido com
+                    segurança. Se precisar de ajuda imediata, ligue 180.</p>
+                <textarea id="denunciaText" placeholder="Descreva o ocorrido aqui..."></textarea>
+                <button id="submitBtn" class="submit-btn">Enviar Denúncia</button>
+            </div>
+        </main>
+    </div>
 
     <div id="popupModal" class="modal">
         <div class="modal-content">
