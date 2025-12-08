@@ -5,38 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Início - Portal de Denúncia</title>
-    <link rel="stylesheet" href="./src/styles/global.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="/src/styles/index.css">
+
+    <!-- MetaDescription e keywords -->
+    <meta name="description"
+        content="SafeSpeak é uma plataforma inteligente focada em comunicação segura, respostas precisas e ferramentas otimizadas para projetos profissionais. Rapidez, clareza e proteção em cada interação." />
+    <meta name="keywords"
+        content="SafeSpeak, safespeak, comunicação segura, privacidade, denuncia, denuncia anonima, violencia" />
+
+    <!-- Importando a fonte -->
     <link
         href="https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Outfit:wght@100..900&display=swap"
         rel="stylesheet">
+
+    <!-- Logo Site -->
+    <link rel="preload icon" as="image" type="image/svg+xml" size="64x64"
+        href="/src/assets/images/icons/logoSafeSpeak.svg">
 </head>
 
 <body>
-    <section class="hero">
-        <img src="./src/assets/images/heroImage.svg" alt="Hero para celular">
-    </section>
     <div class="content-wrapper">
+        <section class="hero">
+            <img src="/src/assets/images/heroImage.svg" alt="Hero para celular" class="hero-mobile">
+        </section>
         <nav>
             <a href="index.html" class="active">Início</a>
-            <a href="./src/pages/denuncia-geral.html">Denúncia Geral</a>
-            <a href="./src/pages/violencia-mulher.html">Violência contra mulher</a>
-            <a href="./src/pages/numeros-emergencia.html">Números de emergência</a>
+            <a href="/src/pages/denuncia-geral/denuncia-geral.html">Denúncia Geral</a>
+            <a href="/src/pages/denuncia-mulher/denuncia-mulher.html">Violência contra mulher</a>
+            <a href="/src/pages/numeros-emergencia/numeros-emergencia.html">Números de emergência</a>
         </nav>
-    
+
         <main class="main-content">
             <div class="content-box">
-                <h1>Bem-vindo(a) ao SafeSpeak</h1>
-                <p>Este é um espaço seguro para você registrar sua denúncia. Sua voz é importante e seu direito à segurança
+                <h1>Bem-vindo(a) ao SafeSpeak!</h1>
+                <p>Este é um espaço seguro para você registrar sua denúncia. Sua voz é importante e seu direito à
+                    segurança
                     é garantido. Selecione uma das opções no menu acima para prosseguir.</p>
-    
+
                 <div class="line"></div>
-    
+
                 <h2>Seus Direitos são Protegidos por Lei</h2>
-                <p>No Brasil, diversas leis garantem a proteção dos cidadãos e punem os agressores. Ao fazer uma denúncia,
-                    você está exercendo um direito fundamental amparado pela legislação. Conheça algumas das principais:</p>
-    
+                <p>No Brasil, diversas leis garantem a proteção dos cidadãos e punem os agressores. Ao fazer uma
+                    denúncia,
+                    você está exercendo um direito fundamental amparado pela legislação. Conheça algumas das principais:
+                </p>
+
                 <ul>
                     <li>
                         <strong>Lei Maria da Penha (Lei nº 11.340/2006):</strong>
@@ -63,13 +76,14 @@
                     <li>
                         <strong>Código Penal Brasileiro:</strong>
                         <p> Tipifica crimes como ameaça, lesão corporal, calúnia,
-                            injúria e difamação, que frequentemente estão associados a diversas formas de violência e abuso.
+                            injúria e difamação, que frequentemente estão associados a diversas formas de violência e
+                            abuso.
                         </p>
                     </li>
                 </ul>
-    
+
                 <p>Se você estiver em perigo imediato, por favor, utilize a página de <strong>
-                        <a href="./assets/pages/numeros-emergencia.html" id="link">
+                        <a href="/src/pages/numeros-emergencia/numeros-emergencia.html" id="link">
                             Números de Emergência</a></strong> para buscar ajuda profissional agora mesmo.</p>
             </div>
         </main>
@@ -77,7 +91,7 @@
 
     <footer>
         <p>
-            <a href="./src/pages/sobre.html">Saiba mais sobre nós</a><br>
+            <a href="/src/pages/sobre-nos/sobre-nos.html">Saiba mais sobre nós</a><br>
         <p>&copy; 2025</p>
         </p>
     </footer>
